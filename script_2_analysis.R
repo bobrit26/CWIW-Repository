@@ -40,10 +40,12 @@ cor.test(suicides_sex_df$suicides_per_100k,
 #correlations by subgroup
 suicides_age_df %>%
   group_by(five_year_age_groups) %>%
-  summarise(cor = cor(suicides_per_100k, spending_per_100k, use = 'complete.obs'))
+  summarise(cor = cor.test(suicides_per_100k, spending_per_100k)$estimate,
+    p.value = cor.test(suicides_per_100k, spending_per_100k)$p.value)
 suicides_sex_df %>%
   group_by(sex) %>%
-  summarise(cor = cor(suicides_per_100k, spending_per_100k, use = 'complete.obs'))
+  summarise(cor = cor.test(suicides_per_100k, spending_per_100k)$estimate,
+            p.value = cor.test(suicides_per_100k, spending_per_100k)$p.value)
 
 #Now for the regression
 #plm seems appropriate for our 20 years and 50 states panel data
