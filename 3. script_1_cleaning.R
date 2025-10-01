@@ -114,9 +114,9 @@ student_spending_clean <- student_spending %>% clean_names()
 #at the end of every state spending for some reason
 #thanks NCES (╯°□°）╯︵ ┻━┻
 #if I fail the class because I am late with my seminar paper - this entire script is the reason why
-#this, the general lack of a sense of responsibility
-#I may be playing stupid games and winning stupid prizes
-#but hey, at least writing code was fun
+#this, and the general lack of a sense of responsibility
+#playing stupid games and winning stupid prizes
+#but hey, at least writing code was kind of interesting
 
 #let's also slice to get rid of the interfering descriptions that came with the CSV
 student_spending_clean <- student_spending_clean %>% slice(1:50)
@@ -309,4 +309,4 @@ suicides_sex_spending_revenue <- suicides_sex_spending_revenue %>%
   write.csv(suicides_age_spending_revenue, 'regression_suicides_age_spending_revenue.csv')
   write.csv(suicides_sex_spending_revenue, 'regression_suicides_sex_spending_revenue.csv')
 
-#okay, I am WAY behind the schedule
+#okay, see script 2 for the analysis
