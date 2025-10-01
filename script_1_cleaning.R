@@ -113,8 +113,6 @@ student_spending_clean <- student_spending %>% clean_names()
 #it took me too long to figure out that there was a semicolon
 #at the end of every state spending for some reason
 #thanks NCES (╯°□°）╯︵ ┻━┻
-#if I fail the class because I am late with my seminar paper - this entire script is the reason why
-#this, and the general lack of a sense of responsibility
 #playing stupid games and winning stupid prizes
 #but hey, at least writing code was kind of interesting
 
